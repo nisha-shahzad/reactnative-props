@@ -1,0 +1,25 @@
+import react from 'react';
+import { View,Text} from 'react-native';
+const Pen =(Props)=>{
+    return(
+        <View style=
+        {{padding:20}}>
+        
+        <Text>yes! I am {Props.name}</Text>
+        </View>
+    );
+}
+const Pencil =()=>{
+    return(
+
+        <View>
+            <Pen name='jelpen'/>
+            <Pen name='balpen'/>
+            <Pen name='inkpen'/>
+             <Pen name='steelpen'/>
+            <Pen name='woodenpen'/>
+        </View>
+
+    );
+}
+export default Pencil;
